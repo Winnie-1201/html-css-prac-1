@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(115, 158, 213);
+}
+.container {
+  width: 640px;
+  height: 320px;
+  display: flex;
+}
+.left {
+  width: 50%;
+  height: calc(100% - 40px);
+  background-color: rgb(188, 218, 245);
+  position: relative;
+  top: 20px;
+  border: 2px rgb(147, 185, 228) solid;
+}
+.left h1 {
+  color: #222;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* change the space between letters */
+  letter-spacing: 4px;
+  margin: 55px 40px 20px 40px;
+}
+.left p {
+  color: #999;
+  font-size: 14px;
+  margin: 40px;
+  /* change the space between lines */
+  line-height: 22px;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  background-color: #474a59;
+  /* change the font color */
+  color: #f1f1f1;
+  position: relative;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+.right svg {
+  position: absolute;
+  width: 320px;
+}
+.right path {
+  /* delete the fill */
+  fill: none;
+  /* create a linear line and the way 
+  it change, which is linear gradient in
+  this case. */
+  stroke: url(#linearGradient1);
+  /* set the width of the line */
+  stroke-width: 4;
+  /* set the dash: dash-length space */
+  stroke-dasharray: 240 1386;
+}
+.form {
+  margin: 40px;
+  position: absolute;
+}
+.form label {
+  color: #c2c2c2;
+  display: block;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.form input {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  color: #f2f2f2;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  /* the indent of the input text;
+  similar to padding left but not taking
+  space for the box model */
+  text-indent: 2px;
+}
+.form button {
+  width: 100%;
+  height: 30px;
+  color: #d0d0d0;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  margin-top: 40px;
+  /* so the button is clickable */
+  cursor: pointer;
+  outline: none;
+}
